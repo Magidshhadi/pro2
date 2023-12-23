@@ -1,0 +1,604 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+:root{
+    --color:  #262626;
+}
+body{
+    font-family: Be Vietnam Pro;
+  
+    background: var(--White-97, #F7F7F8);
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+}
+
+.container{
+    width: calc(100% - 264px);
+    margin: auto;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    
+}
+header{
+    background-color: white;
+    top: 0px;
+    position: sticky;
+    z-index: 1;
+    padding: 12px 0px;
+
+}
+header .lognav{
+    display: flex;
+    width: calc((100% - 264px ) /2) ;
+    text-align: center;
+    justify-content:space-between ;
+    align-items: center;
+    gap: 50px;
+
+}
+header nav ul {
+    display: flex;
+    gap: 26px;
+}
+header nav ul li {
+    color: var(--color);
+    width: max-content;
+   
+}
+header .auth {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    align-content: center;
+    
+    
+}
+header .auth a:first-child {
+   font-size: 18px;
+   font-weight: 400;
+   color: var(--color);
+   width: 80px;
+   text-align: center;
+}
+header .auth a:last-child {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 8px 30px;
+    height: fit-content;
+    border-radius: 8px;
+    background-color: orange;
+    
+}
+header .smaller{
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    header .container{
+        width: 75%;
+    }
+
+    header nav {
+         display: none;
+     }
+
+     header .smaller{
+         display: block;
+     }
+    
+ }
+@media screen and (max-width: 990px) {
+    
+   header nav {
+        display: none;
+    }
+    header .smaller{
+        display: block;
+    }
+
+}
+.hero{
+padding-bottom: 100px;
+}
+.hero .row{
+    flex-direction: column;
+    gap: 10px
+    
+}
+.hero .top-hero{
+background-color: red;
+position: relative;
+width: 55%;
+}
+.hero .top-hero  span{
+    position: absolute;
+    top: -15px;
+    left: 0;
+}
+
+.hero .mid-hero{
+    border-radius: 11px;
+    background-color: white;
+    display: flex;
+    width: 50%;
+    padding :12px 9px 5px 0px;
+    gap: 12px;
+    align-items: center;
+}   
+.hero .mid-hero #sv{
+    padding: 1px;
+    background-color:#FFF4E5 ;
+    margin-left: 20px;
+} 
+.hero .mid-hero span{
+    color: orange;
+}
+.hero .mid2-hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.hero .mid2-hero p{
+   font-size: 30px;
+   font-weight: 700;
+}
+.hero .mid2-hero span{
+font-size: 10px;
+}
+.hero .hero-btn {
+    display: flex;
+    gap: 10px;
+}
+.hero .hero-btn .hero-auth1{
+    border: none;
+    padding: 12px;
+    border-radius: 11px;
+    color: white;
+    background-color: #FF9500;
+}
+.hero .hero-btn .hero-auth2{
+    border: none;
+    padding: 12px;
+    border-radius: 11px;
+    background-color: white;
+}
+
+
+
+
+.icon .logo{
+    border-radius: 12px;
+    display: flex;
+    margin-bottom: 70px;
+    background-color: white;
+    padding: 24px;
+    justify-content: space-around;
+}
+
+
+.main-img{
+    margin-bottom: 50px;
+}
+.main-img img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+.benfets{
+    padding-bottom: 50px;
+}
+
+.benfets .top-benfets{
+ 
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+flex-wrap: wrap;
+position: relative;
+
+}
+.benfets .top-benfets .our-benfets{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+padding-bottom: 20px;
+
+}
+.benfets .top-benfets .our-benfets p{
+    font-size: 10px;
+    color: var(--color);
+}
+.benfets .top-benfets  .viewbtn{
+ 
+    display: flex;
+    justify-content: center;
+    background-color: white;
+   padding-bottom: 30;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 12px;
+}
+.benfets .top-benfets  .viewbtn #view{
+    background-color: white;
+    border: none;;
+}
+.benfets .bottom-benfets{
+    margin-top: 20px ;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.benfets .bottom-benfets .container{
+    width: 90%;
+}
+.benfets .bottom-benfets .under-benfets{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+background-color: white;
+width: calc((100% - 40px) / 3);
+
+padding: 15px;
+}
+.benfets .bottom-benfets .under-benfets .num{
+   position: relative;
+   margin-bottom: 30px;
+}
+.benfets .bottom-benfets .under-benfets .num p{
+    font-size: 30px;
+    font-weight: 800;
+    position: absolute;
+    right: 0;
+}
+.benfets .bottom-benfets .under-benfets p{
+font-size: 12px;
+}
+.benfets .bottom-benfets .under-benfets .benfet-icon{
+   display: flex;
+   justify-content: end;
+}
+.benfets .bottom-benfets .under-benfets .benfet-icon svg{
+background-color:#ececef ;
+padding: 3px;
+}
+.Courses{
+    padding-bottom: 50px;
+}
+
+.Courses .top-Courses{
+ 
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+flex-wrap: wrap;
+position: relative;
+
+}
+.Courses .top-Courses .our-Courses{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+padding-bottom: 20px;
+
+}
+.Courses .top-Courses .our-Courses p{
+    font-size: 10px;
+    color: var(--color);
+}
+.Courses .top-Courses  .viewbtn{
+ 
+    display: flex;
+    justify-content: center;
+    background-color: white;
+   padding-bottom: 30;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 12px;
+}
+.Courses .top-Courses  .viewbtn #view{
+    background-color: white;
+    border: none;;
+}
+.Courses .bottom-courses{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.Courses .bottom-courses .under-courses{
+    display: flex;
+    flex-direction: column;
+    width:calc((100% - 30px) / 2);
+    background-color: white;
+    align-items: center;
+    row-gap: 10px;
+}
+.Courses .bottom-courses .under-courses img{
+    width: 90%;
+    border-radius: 8px;
+    padding: 30px 0px;
+    
+}
+.Courses .bottom-courses .under-courses .course-info{
+
+display: flex;
+width: 90%;
+gap: 10px;
+margin-bottom: 30px;
+position: relative;
+align-items: center;
+}
+.Courses .bottom-courses .under-courses .course-info p{
+    font-size: 10px;
+}
+.Courses .bottom-courses .under-courses .course-info span{
+    position: absolute;
+    right: 0;
+}
+.Courses .bottom-courses .under-courses .course-name{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    row-gap: 30px;
+    font-size: 12px;
+    justify-content: end;
+
+}
+.Courses .bottom-courses .under-courses .course-name .coursebtn{
+    padding: 12px;
+    background-color: rgb(244, 244, 244);
+    border: none;
+    margin-bottom: 40px;
+    
+}
+.Courses .bottom-courses .under-courses .course-name #r{
+    margin-top: 14px;
+}
+.Testimonial{
+    padding-bottom: 50px;
+}
+
+.Testimonial .top-Testimonial{
+ 
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+flex-wrap: wrap;
+position: relative;
+
+}
+.Testimonial .top-Testimonial .our-Testimonial{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+padding-bottom: 20px;
+
+}
+.Testimonial .top-Testimonial .our-Testimonial p{
+    font-size: 10px;
+    color: var(--color);
+}
+.Testimonial .top-Testimonial  .viewbtn{
+ 
+    display: flex;
+    justify-content: center;
+    background-color: white;
+   padding-bottom: 30;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 12px;
+}
+.Testimonial .top-Testimonial  .viewbtn #view{
+    background-color: white;
+    border: none;;
+}
+.Testimonial .bottom-Testimonail .container{
+    padding-top: 30px;
+    background-color: #FF55;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 40px;
+    width :90%
+  
+}
+.Testimonial .bottom-Testimonail .testimonial-under{
+width: calc((100% - 10px) / 2);
+background-color:white ;
+display: flex;
+flex-direction: column;
+
+}
+.Testimonial .bottom-Testimonail .testimonial-under .ptestimonial{
+    display: flex;
+    margin-bottom: 30px;
+    
+    font-size: 12px;
+   justify-content: center;
+}
+.Testimonial .bottom-Testimonail .testimonial-under .imtestimonial{
+    display: flex;
+    align-items: end;
+    position: relative;
+}
+.Testimonial .bottom-Testimonail .testimonial-under .imtestimonial .story{
+    position: absolute;
+    right: 0;
+    background-color: rgb(235, 230, 230);
+    padding: 12px;
+    border: none;
+}
+.Pricing .top-pricing {
+  display: flex;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.Pricing .top-pricing .ourpricing{
+    width: 56%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Pricing .top-pricing .ourpricing p{
+    font-size: 10px;
+    color: var(--color);
+}
+.Pricing .top-pricing .pricingpttn {
+    background-color: white;
+    width: 20%;
+   padding: 12px;
+    
+}
+.Pricing .top-pricing .pricingpttn #month{
+    border-radius: 6px;
+    background-color: orange;
+    padding: 12px;
+    color: white;
+
+}
+.Pricing .top-pricing .pricingpttn #year{
+     background-color: white;
+     border: none;
+     margin: 20px;
+}
+.Pricing .bottom-pricing{
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Pricing .bottom-pricing .card{
+    background-color: white;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   padding-bottom: 100px;
+   padding-right: 20px;
+    row-gap: 20px;
+}
+.Pricing .bottom-pricing .card .cost{
+    display: flex;
+    flex-wrap: wrap;
+   
+   
+}
+.Pricing .bottom-pricing .card .cost p{
+font-size: 50px;
+font-weight: 600;
+
+}
+.Pricing .bottom-pricing .card .cost span{
+font-size: 12px;
+display: flex;
+align-items: flex-end;
+}
+.Pricing .bottom-pricing .card .lis{
+   
+    width: calc((100% -80px) / 2);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.Pricing .bottom-pricing .card .lis ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2px
+}
+.Pricing .bottom-pricing .card .lis .card-btn{
+    background-color: orange;
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+   
+}
+.Pricing .bottom-pricing .card .lis .card-btn .Get{
+    color: white;
+    background-color: orange;
+    border: none;
+}
+footer{
+    background-color: white;
+    padding-top: 50px;
+    
+    
+}
+footer .top-footer{
+    display: flex;
+   width: 100%;
+   justify-content: space-between;
+   align-items: center;
+}
+footer .top-footer .right-footer .logo{
+    padding-bottom: 10px;
+}
+footer .top-footer .right-footer .contact{
+    display: flex;
+    gap: 0px 20px;
+    align-items: center;
+    padding-bottom: 50px;
+}
+footer .top-footer .right-footer .contact ul {
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+footer .top-footer .left-footer{
+    width: calc(100% / 2);
+    display: flex;
+    justify-content: space-between;
+}
+footer .top-footer .left-footer .coulmn ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+footer .top-footer .left-footer .coulmn ul li:first-child{
+font-weight: 700;
+padding-bottom: 10px;
+}
+footer .top-footer .left-footer .social {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+footer  .left-footer .social p{
+    font-weight: 700;
+}
+footer .top-footer  .left-footer .social ul{
+    display: flex;
+gap :20px
+}
+footer .container .bottom-footer {
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    padding: 100px 0px;
+    
+}
